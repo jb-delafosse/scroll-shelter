@@ -3,6 +3,8 @@ from typing import List
 from dataclasses import dataclass
 from datetime import datetime
 
+from fastapi_users import models
+
 
 @dataclass(frozen=True)
 class FetchFileRequest:
@@ -19,3 +21,15 @@ class File:
     size: int
     name: str
     file_extension: str
+
+
+class User(models.BaseUser, models.BaseOAuthAccountMixin):
+    pass
+
+
+class UserCreate(models.BaseUserCreate):
+    pass
+
+
+class UserUpdate(User, models.BaseUserUpdate):
+    pass
