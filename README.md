@@ -2,15 +2,15 @@
 
 <div align="center">
 
-[![Build status](https://github.com/scroll-shelter/scroll-shelter/workflows/build/badge.svg?branch=master&event=push)](https://github.com/scroll-shelter/scroll-shelter/actions?query=workflow%3Abuild)
+[![Build status](https://github.com/jb-delafosse/scroll-shelter/workflows/build/badge.svg?branch=master&event=push)](https://github.com/jb-delafosse/scroll-shelter/actions?query=workflow%3Abuild)
 [![Python Version](https://img.shields.io/pypi/pyversions/scroll-shelter.svg)](https://pypi.org/project/scroll-shelter/)
-[![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](https://github.com/scroll-shelter/scroll-shelter/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aapp%2Fdependabot)
+[![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](https://github.com/jb-delafosse/scroll-shelter/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aapp%2Fdependabot)
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Security: bandit](https://img.shields.io/badge/security-bandit-green.svg)](https://github.com/PyCQA/bandit)
-[![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/scroll-shelter/scroll-shelter/blob/master/.pre-commit-config.yaml)
-[![Semantic Versions](https://img.shields.io/badge/%F0%9F%9A%80-semantic%20versions-informational.svg)](https://github.com/scroll-shelter/scroll-shelter/releases)
-[![License](https://img.shields.io/github/license/scroll-shelter/scroll-shelter)](https://github.com/scroll-shelter/scroll-shelter/blob/master/LICENSE)
+[![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/jb-delafosse/scroll-shelter/blob/master/.pre-commit-config.yaml)
+[![Semantic Versions](https://img.shields.io/badge/%F0%9F%9A%80-semantic%20versions-informational.svg)](https://github.com/jb-delafosse/scroll-shelter/releases)
+[![License](https://img.shields.io/github/license/jb-delafosse/scroll-shelter)](https://github.com/jb-delafosse/scroll-shelter/blob/master/LICENSE)
 
 `scroll-shelter` is an ongoing personal project where I try to build a platform that can handle and process handwritten notes.
 
@@ -44,7 +44,7 @@ Poetry's [commands](https://python-poetry.org/docs/cli/#commands) are very intui
 
 ### Makefile usage
 
-[`Makefile`](https://github.com/scroll-shelter/scroll-shelter/blob/master/Makefile) contains many functions for fast assembling and convenient work.
+[`Makefile`](https://github.com/jb-delafosse/scroll-shelter/blob/master/Makefile) contains many functions for fast assembling and convenient work.
 
 <details>
 <summary>1. Download Poetry</summary>
@@ -183,7 +183,7 @@ which is equivalent to:
 make docker VERSION=latest
 ```
 
-More information [here](https://github.com/scroll-shelter/scroll-shelter/tree/master/docker).
+More information [here](https://github.com/jb-delafosse/scroll-shelter/tree/master/docker).
 
 </p>
 </details>
@@ -202,16 +202,16 @@ or to remove all build
 make clean
 ```
 
-More information [here](https://github.com/scroll-shelter/scroll-shelter/tree/master/docker).
+More information [here](https://github.com/jb-delafosse/scroll-shelter/tree/master/docker).
 
 </p>
 </details>
 
 ## 🛡 License
 
-[![License](https://img.shields.io/github/license/scroll-shelter/scroll-shelter)](https://github.com/scroll-shelter/scroll-shelter/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/jb-delafosse/scroll-shelter)](https://github.com/jb-delafosse/scroll-shelter/blob/master/LICENSE)
 
-This project is licensed under the terms of the `GNU GPL v3.0` license. See [LICENSE](https://github.com/scroll-shelter/scroll-shelter/blob/master/LICENSE) for more details.
+This project is licensed under the terms of the `GNU GPL v3.0` license. See [LICENSE](https://github.com/jb-delafosse/scroll-shelter/blob/master/LICENSE) for more details.
 
 ## 📃 Citation
 
@@ -222,7 +222,7 @@ This project is licensed under the terms of the `GNU GPL v3.0` license. See [LIC
   year = {2021},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/scroll-shelter/scroll-shelter}}
+  howpublished = {\url{https://github.com/jb-delafosse/scroll-shelter}}
 }
 ```
 

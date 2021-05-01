@@ -13,8 +13,8 @@ authors = [
   "scroll-shelter < >"
 ]
 license = "GNU GPL v3.0"
-repository = "https://github.com/scroll-shelter/scroll-shelter"
-homepage = "https://github.com/scroll-shelter/scroll-shelter"
+repository = "https://github.com/jb-delafosse/scroll-shelter"
+homepage = "https://github.com/jb-delafosse/scroll-shelter"
 
 # Keywords description https://python-poetry.org/docs/pyproject/#keywords
 keywords = []  # Update me
