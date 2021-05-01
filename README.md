@@ -22,38 +22,6 @@
 
 Nothing yet.
 
-## Installation
-
-```bash
-pip install -U scroll-shelter
-```
-
-or install with `Poetry`
-
-```bash
-poetry add scroll-shelter
-```
-
-Then you can run
-
-```bash
-scroll-shelter --help
-```
-
-```bash
-scroll-shelter --name Roman
-```
-
-or if installed with `Poetry`:
-
-```bash
-poetry run scroll-shelter --help
-```
-
-```bash
-poetry run scroll-shelter --name Roman
-```
-
 ## 🛠️ Contributing
 
 ### Package Manager
@@ -238,29 +206,6 @@ More information [here](https://github.com/scroll-shelter/scroll-shelter/tree/ma
 
 </p>
 </details>
-
-## 📈 Releases
-
-You can see the list of available releases on the [GitHub Releases](https://github.com/scroll-shelter/scroll-shelter/releases) page.
-
-We follow [Semantic Versions](https://semver.org/) specification.
-
-We use [`Release Drafter`](https://github.com/marketplace/actions/release-drafter). As pull requests are merged, a draft release is kept up-to-date listing the changes, ready to publish when you’re ready. With the categories option, you can categorize pull requests in release notes using labels.
-
-For Pull Request this labels are configured, by default:
-
-|               **Label**               |  **Title in Releases**  |
-| :-----------------------------------: | :---------------------: |
-|       `enhancement`, `feature`        |       🚀 Features       |
-| `bug`, `refactoring`, `bugfix`, `fix` | 🔧 Fixes & Refactoring  |
-|       `build`, `ci`, `testing`        | 📦 Build System & CI/CD |
-|              `breaking`               |   💥 Breaking Changes   |
-|            `documentation`            |    📝 Documentation     |
-|            `dependencies`             | ⬆️ Dependencies updates |
-
-You can update it in [`release-drafter.yml`](https://github.com/scroll-shelter/scroll-shelter/blob/master/.github/release-drafter.yml).
-
-GitHub creates the `bug`, `enhancement`, and `documentation` labels for you. Dependabot creates the `dependencies` label. Create the remaining labels on the Issues tab of your GitHub repository, when you need them.
 
 ## 🛡 License
 
