@@ -1,0 +1,10 @@
+# This file contains values from Cookiecutter
+
+default_context:
+  project_name: "scroll-shelter"
+  project_description: "Awesome `scroll-shelter` is a Python cli/package created with https://github.com/TezRomacH/python-package-template"
+  organization: "scroll-shelter"
+  license: "GNU GPL v3.0"
+  version: "0.1.0"
+  github_name: "scroll-shelter"
+  email: " "
