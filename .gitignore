@@ -618,6 +618,7 @@ MigrationBackup/
 
 # Ignore .secret
 .secret
+.env
 
 # pycharm config
 .idea

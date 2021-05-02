@@ -1,7 +1,11 @@
 import motor.motor_asyncio
+from app.config import get_config
+
+config = get_config()
+
 
 DATABASE_URL: str
-DATABASE_URL = "mongodb://localhost:27017"
+DATABASE_URL = config.client_secret
 CLIENT = motor.motor_asyncio.AsyncIOMotorClient(
     DATABASE_URL, uuidRepresentation="standard"
 )

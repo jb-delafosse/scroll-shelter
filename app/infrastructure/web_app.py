@@ -1,4 +1,7 @@
+from app.config import get_config
 from fastapi import FastAPI
 
-SECRET: str = "SECRET"
+config = get_config()
+
+SECRET: str = config.secret
 app = FastAPI()
