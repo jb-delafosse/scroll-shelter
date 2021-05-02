@@ -120,7 +120,7 @@ codestyle:
 
 .PHONY: test
 test:
-	poetry run pytest
+	poetry run pytest tests
 
 .PHONY: lint
 lint: test check-safety check-style
