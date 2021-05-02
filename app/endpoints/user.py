@@ -1,4 +1,4 @@
-from scroll_shelter.infrastructure.fastapi_user import (
+from app.infrastructure.fastapi_user import (
     AUTH_ROUTER,
     GOOGLE_OAUTH_ROUTER,
     REGISTER_ROUTER,
@@ -6,7 +6,7 @@ from scroll_shelter.infrastructure.fastapi_user import (
     USERS_ROUTER,
     VERIFY_ROUTER,
 )
-from scroll_shelter.infrastructure.web_app import app
+from app.infrastructure.web_app import app
 
 AUTH_TAG = "auth"
 AUTH_PREFIX = f"/{AUTH_TAG}"

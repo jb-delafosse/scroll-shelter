@@ -5,8 +5,8 @@
 
 import logging
 
-import scroll_shelter.endpoints.user
-from scroll_shelter.infrastructure import web_app
+import app.endpoints.user
+from app.infrastructure import web_app
 
 logging.getLogger().setLevel(logging.DEBUG)
 web_app.SECRET = "MY SECRET"

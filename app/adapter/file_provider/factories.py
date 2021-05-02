@@ -4,11 +4,11 @@ from typing import cast
 
 import logging
 
+from app.adapter.file_provider.implems import GDriveFileProvider
+from app.common.exceptions import InvalidFileProviderFactoryError
 from google.auth.exceptions import RefreshError
 from google.oauth2.credentials import Credentials
 from google_auth_httplib2 import Request
-from scroll_shelter.adapter.file_provider.implems import GDriveFileProvider
-from scroll_shelter.common.exceptions import InvalidFileProviderFactoryError
 
 
 class GDriveFileProviderFactory:

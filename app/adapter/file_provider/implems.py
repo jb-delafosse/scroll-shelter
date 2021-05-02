@@ -3,10 +3,10 @@ from typing import List
 from dataclasses import dataclass
 from datetime import datetime
 
+from app.interface.file_provider import FileRequest, IFileProvider
+from app.usecase.dto import File
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
-from scroll_shelter.interface.file_provider import FileRequest, IFileProvider
-from scroll_shelter.usecase.dto import File
 
 
 @dataclass(frozen=True)

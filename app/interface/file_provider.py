@@ -3,7 +3,7 @@ from typing import Callable
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 
-from scroll_shelter.usecase.dto import File
+from app.usecase.dto import File
 
 
 @dataclass(frozen=True)

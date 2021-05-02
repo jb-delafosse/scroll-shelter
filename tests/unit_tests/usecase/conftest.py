@@ -3,8 +3,8 @@ from typing import Callable
 from unittest.mock import MagicMock
 
 import pytest
-from scroll_shelter.interface import file_provider
-from scroll_shelter.usecase.dto import File
+from app.interface import file_provider
+from app.usecase.dto import File
 
 
 @pytest.fixture(scope="function")

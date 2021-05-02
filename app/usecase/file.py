@@ -1,6 +1,6 @@
-from scroll_shelter.interface import file_provider
-from scroll_shelter.interface.file_provider import FileRequest
-from scroll_shelter.usecase.dto import FetchFileRequest, File
+from app.interface import file_provider
+from app.interface.file_provider import FileRequest
+from app.usecase.dto import FetchFileRequest, File
 
 
 def fetch_file(fetch_scroll_request: FetchFileRequest) -> File:

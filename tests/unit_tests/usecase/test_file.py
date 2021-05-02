@@ -1,8 +1,8 @@
 from datetime import datetime
 from unittest.mock import MagicMock
 
-from scroll_shelter.usecase.dto import FetchFileRequest, File
-from scroll_shelter.usecase.file import fetch_file
+from app.usecase.dto import FetchFileRequest, File
+from app.usecase.file import fetch_file
 
 
 def test_fetch_file(mock_file_provider):

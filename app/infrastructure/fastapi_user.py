@@ -1,13 +1,11 @@
+from app.infrastructure.database import CLIENT
+from app.infrastructure.google_oauth_client import GOOGLE_OAUTH_CLIENT
+from app.infrastructure.web_app import SECRET
+from app.interface.user_db import UserDB
+from app.usecase.dto import User, UserCreate, UserUpdate
 from fastapi_users import FastAPIUsers
 from fastapi_users.authentication import JWTAuthentication
 from fastapi_users.db import MongoDBUserDatabase
-from scroll_shelter.infrastructure.database import CLIENT
-from scroll_shelter.infrastructure.google_oauth_client import (
-    GOOGLE_OAUTH_CLIENT,
-)
-from scroll_shelter.infrastructure.web_app import SECRET
-from scroll_shelter.interface.user_db import UserDB
-from scroll_shelter.usecase.dto import User, UserCreate, UserUpdate
 
 db = CLIENT["database_name"]
 collection = db["users"]
