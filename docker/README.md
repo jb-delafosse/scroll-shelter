@@ -15,7 +15,7 @@ make docker VERSION=latest
 ```
 
 You could also provide name and version for the image itself.
-Default name is `IMAGE := scroll_shelter`.
+Default name is `IMAGE := scroll-shelter`.
 Default version is `VERSION := latest`.
 
 ```bash
@@ -27,7 +27,7 @@ make docker IMAGE=some_name VERSION=0.1.0
 ```bash
 docker run -it --rm \
    -v $(pwd):/workspace \
-   scroll_shelter bash
+   scroll-shelter bash
 ```
 
 ## How to clean up

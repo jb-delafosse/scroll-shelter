@@ -27,10 +27,6 @@ classifiers = [  # Update me
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
-[tool.poetry.scripts]
-# Entry points for the package https://python-poetry.org/docs/pyproject/#scripts
-"scroll-shelter" = "app.entrypoints.http_server:APP"
-
 [tool.poetry.dependencies]
 python = "^3.8"
 importlib_metadata = {version = "^1.6.0", python = "<3.8"}

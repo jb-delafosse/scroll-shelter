@@ -1,6 +1,6 @@
 SHELL := /usr/bin/env bash
 
-IMAGE := scroll_shelter
+IMAGE := scroll-shelter
 VERSION := latest
 
 #! An ugly hack to create individual flags

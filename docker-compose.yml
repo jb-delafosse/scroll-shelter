@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    command: bash -c "uvicorn app.entrypoints.http_server:APP --host 0.0.0.0 --port 8000 --reload"
+    volumes:
+      - .:/workspace
+    ports:
+      - 8000:8000
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo_user
+      MONGO_INITDB_ROOT_PASSWORD: mongo_password
+    ports:
+      - 127.0.0.1:27017:27017 # remove this line on prod

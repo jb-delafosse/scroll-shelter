@@ -5,7 +5,7 @@ config = get_config()
 
 
 DATABASE_URL: str
-DATABASE_URL = config.client_secret
+DATABASE_URL = config.db_path
 CLIENT = motor.motor_asyncio.AsyncIOMotorClient(
     DATABASE_URL, uuidRepresentation="standard"
 )
