@@ -29,5 +29,7 @@ RESET_PASSWORD_ROUTER = fastapi_users.get_reset_password_router(SECRET)
 VERIFY_ROUTER = fastapi_users.get_verify_router(SECRET)
 USERS_ROUTER = fastapi_users.get_users_router()
 GOOGLE_OAUTH_ROUTER = fastapi_users.get_oauth_router(
-    GOOGLE_OAUTH_CLIENT, SECRET
+    oauth_client=GOOGLE_OAUTH_CLIENT,
+    state_secret=SECRET,
+    redirect_url="http://localhost:8080/auth/google/callback",
 )
