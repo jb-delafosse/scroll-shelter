@@ -25,9 +25,13 @@ export default {
       let google = window.google
       console.log("Create Picker", google.picker);
       if (this.pickerApiLoaded  && this.$store.state.user.oauth_accounts[0].access_token) {
+        var folderView = new google.picker.DocsView(google.picker.ViewId.FOLDERS)
+          .setIncludeFolders(true)
+          .setMimeTypes('application/vnd.google-apps.folder')
+          .setSelectFolderEnabled(true);
         var picker = new google.picker.PickerBuilder()
           .enableFeature(google.picker.Feature.MULTISELECT_ENABLED)
-          .addView(google.picker.ViewId.FOLDERS)
+          .addView(folderView)
           .setOAuthToken(this.$store.state.user.oauth_accounts[0].access_token)
           .setDeveloperKey("AIzaSyBaQZlYTmndQYCcdlkHoVtBzpZYandwaaA")
           .setCallback(this.pickerCallback)
