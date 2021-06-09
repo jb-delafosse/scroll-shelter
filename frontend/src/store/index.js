@@ -12,24 +12,27 @@ export default new Vuex.Store({
     token: localStorage.getItem('user-token') || '',
     isLogged: localStorage.getItem('user-token') !== null,
     status: '',
+    user: undefined,
   },
   mutations: {
-    [LOGIN_SUCCESS]: (st, token) => {
+    [LOGIN_SUCCESS]: (st, {token, user}) => {
     st.status = 'success';
     st.token = token;
     st.hasLoadedOnce = true;
     st.isLogged = true;
+    st.user = user;
     },
     [LOGIN_FAILED]: (st) => {
     st.status = '';
     st.token = '';
     st.hasLoadedOnce = false;
     st.isLogged = false;
+    st.user = undefined
     },
   },
   actions: {
-    [LOGIN_SUCCESS]: ({ commit }, token) => new Promise(() => {
-      commit(LOGIN_SUCCESS, token);
+    [LOGIN_SUCCESS]: ({ commit }, {token, user}) => new Promise(() => {
+      commit(LOGIN_SUCCESS, {token, user});
     }),
     [LOGIN_FAILED]: ({ commit }) => new Promise(() => {
       commit(LOGIN_FAILED);
