@@ -5,10 +5,10 @@
 
 import logging
 
+import app.endpoints.folder
 import app.endpoints.user
 from app.infrastructure import web_app
 
 logging.getLogger().setLevel(logging.DEBUG)
-web_app.SECRET = "MY SECRET"
 
 APP = web_app.app
