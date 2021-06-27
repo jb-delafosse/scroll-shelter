@@ -485,7 +485,7 @@ typing-extensions = "*"
 
 [[package]]
 name = "identify"
-version = "2.2.8"
+version = "2.2.10"
 description = "File identification library for Python"
 category = "dev"
 optional = false
@@ -1416,8 +1416,8 @@ httpx-oauth = [
     {file = "httpx_oauth-0.3.5-py3-none-any.whl", hash = "sha256:45e2989bc7df23f7bb4ace4ba9a2d26353447b87c598bc152e1f56b7948bd966"},
 ]
 identify = [
-    {file = "identify-2.2.8-py2.py3-none-any.whl", hash = "sha256:3a74cf41f1a0bde21e2f196a1727a608629339d9897226bad07b22e0bbde6faa"},
-    {file = "identify-2.2.8.tar.gz", hash = "sha256:7d4a73d58869a484d4ba8892793c80e30aa699e77707f26c1049486ef9be415f"},
+    {file = "identify-2.2.10-py2.py3-none-any.whl", hash = "sha256:18d0c531ee3dbc112fa6181f34faa179de3f57ea57ae2899754f16a7e0ff6421"},
+    {file = "identify-2.2.10.tar.gz", hash = "sha256:5b41f71471bc738e7b586308c3fca172f78940195cb3bf6734c1e66fdac49306"},
 ]
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
