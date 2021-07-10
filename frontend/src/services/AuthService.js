@@ -8,7 +8,7 @@ export default class AuthService {
     return axios
       .get('/auth/google/authorize',
         {
-          params:{authentication_backend: "jwt", scopes: ["email","profile"]},
+          params:{authentication_backend: "jwt", scopes: ["email","profile", "https://www.googleapis.com/auth/drive.file"]},
           paramsSerializer: params => { return qs.stringify(params, { arrayFormat: "repeat" }) }
 
         })

@@ -1,4 +1,4 @@
-from app.infrastructure.database import CLIENT
+from app.infrastructure.database import DATABASE
 from app.infrastructure.google_oauth_client import GOOGLE_OAUTH_CLIENT
 from app.infrastructure.web_app import SECRET
 from app.interface.user_db import UserDB
@@ -7,9 +7,8 @@ from fastapi_users import FastAPIUsers
 from fastapi_users.authentication import JWTAuthentication
 from fastapi_users.db import MongoDBUserDatabase
 
-db = CLIENT["database_name"]
-collection = db["users"]
-user_db = MongoDBUserDatabase(UserDB, collection)
+user_collection = DATABASE["users"]
+user_db = MongoDBUserDatabase(UserDB, user_collection)
 jwt_authentication = JWTAuthentication(
     secret=SECRET, lifetime_seconds=3600, tokenUrl="/auth/jwt/login"
 )

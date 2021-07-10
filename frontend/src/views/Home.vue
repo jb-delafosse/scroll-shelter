@@ -1,15 +1,15 @@
 <template>
-  <hello-world />
+  <GDriveSelector/>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+  import GDriveSelector from '../components/GDriveSelector'
 
   export default {
     name: 'Home',
 
     components: {
-      HelloWorld,
+      GDriveSelector,
     },
   }
 </script>

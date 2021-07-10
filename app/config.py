@@ -17,6 +17,9 @@ class Config(BaseSettings):
     # HTTP server settings
     secret: str
 
+    # Google Picker API
+    gpicker_key: str
+
     class Config:
         env_file = ".env"
 
