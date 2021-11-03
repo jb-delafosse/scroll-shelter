@@ -42,7 +42,7 @@ fastapi = "^0.65.1"
 
 [tool.poetry.dev-dependencies]
 darglint = "^1.5.8"
-isort = "^5.7.0"
+isort = "^5.10.0"
 pyupgrade = "^2.7.4"
 black = "^21.6b0"
 mypy = "^0.812"
