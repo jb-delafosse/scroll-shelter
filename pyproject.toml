@@ -9,9 +9,7 @@ name = "scroll-shelter"
 version = "0.1.0"
 description = "Awesome `scroll-shelter` is a Python cli/package created with https://github.com/TezRomacH/python-package-template"
 readme = "README.md"
-authors = [
-  "scroll-shelter < >"
-]
+authors = ['jb-delafosse']
 license = "GNU GPL v3.0"
 repository = "https://github.com/jb-delafosse/scroll-shelter"
 homepage = "https://github.com/jb-delafosse/scroll-shelter"
@@ -20,7 +18,7 @@ homepage = "https://github.com/jb-delafosse/scroll-shelter"
 keywords = []  # Update me
 
 # Pypi classifiers: https://pypi.org/classifiers/
-classifiers = [  # Update me
+classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Developers",
   "Operating System :: OS Independent",
